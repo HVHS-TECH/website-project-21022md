@@ -3,7 +3,8 @@ nav{
     background-image: radial-gradient(circle, black 75%, cyan);
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
-    height: 10%;
+    height: 10vh;
+    align-content: center;
 }
 
 .grid-item{
