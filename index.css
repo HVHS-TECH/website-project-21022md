@@ -1,5 +1,14 @@
 nav{
     font-family:"Cabin", sans-serif;
+    background-image: radial-gradient(circle, black 75%, cyan);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    height: 10%;
+}
+
+.grid-item{
+    text-align: center;
+    color: white;
 }
 
 h1, p{
