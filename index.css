@@ -6,6 +6,13 @@ nav{
     height: 8vh;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-item{
@@ -14,12 +21,27 @@ nav{
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
-a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid-item .dropdown-button {
+  font-size: inherit;  
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: auto;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.grid-item a:hover, .dropdownmenu:hover .dropdown-button{
+    background-color: cyan;
 }
 
 #logo{
