@@ -24,24 +24,58 @@ a{
     overflow: hidden;
 }
 
-.grid-item .dropdown-button {
-  font-size: inherit;  
-  border: none;
-  outline: none;
-  color: inherit;
-  padding: auto;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+.navbar{
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+}
+
+.dropdownmenu{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownmenu .dropdown-button{
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    color: inherit;
+    padding: auto;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdownmenu a:hover, .dropdownmenu:hover .dropdown-button{
+    background-color: cyan;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
+    background-color: inherit;
+    color: inherit;
+    z-index: 1;
 }
 
-.grid-item a:hover, .dropdownmenu:hover .dropdown-button{
-    background-color: cyan;
+.dropdown-content a {
+  float: none;
+  color: inherit;
+  padding: auto;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownmenu:hover .dropdown-content {
+  display: block;
 }
 
 #logo{
