@@ -34,6 +34,13 @@ a{
     text-align: center;
     padding: auto;
     text-decoration: none;
+    color:white;
+    transition: transform 0.5s ease;
+}
+
+.navbar a:hover{
+    transform:scale(1.05);
+    color:cyan;
 }
 
 .dropdownmenu .dropdown-button{
