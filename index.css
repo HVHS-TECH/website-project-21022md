@@ -1,12 +1,17 @@
+/* base Navbar */
 nav{
     font-family:"Cabin", sans-serif;
     background-image: radial-gradient(circle, black 75%, cyan);
+    border: 0.1rem solid black;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
     height: 8vh;
     align-content: center;
     justify-content: center;
     overflow: hidden;
+    font-size: 1.5rem;
+    margin:auto; 
+    width: 100%;
 }
 
 a{
@@ -28,9 +33,9 @@ a{
     margin:0;
 }
 
+/* dropdown menu */
 .navbar a{
     float: left;
-    font-size: 1.5rem;
     text-align: center;
     padding: auto;
     text-decoration: none;
@@ -43,52 +48,64 @@ a{
     color:cyan;
 }
 
-.dropdownmenu .dropdown-button{
+.subnav .subnav-button{
     font-size: inherit;
     border: none;
     outline: none;
     color: inherit;
-    padding: auto;
     height: 8vh;
     background-color: inherit;
     transition: transform 0.5s ease;
+    margin: 0;
 }
 
-.dropdownmenu:hover .dropdown-button{
+.subnav:hover .subnav-button{
     transform: scale(1.05);
     color: cyan;
 }
 
-.dropdownmenu a:hover {
+.subnav a:hover {
     background-color: cyan;
     color: black;
 }
 
-.dropdown-content{
+.subnav-content{
     display: none;
     position: absolute;
-    background-image: radial-gradient(circle, black 60%, cyan);
+    left: 0;
+    background-color:black;
     color: white;
-    padding: 0.5rem;
+    width: 100%;
+    border: 0.1rem solid cyan;
+    opacity: 88%;
     z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
+.subnav a {
+  float: left;
   color: inherit;
-  padding: auto;
+  padding: 0.5rem;
   display: block;
-  text-align: center;
   transition: background-color 0.5s ease;
 }
 
-.dropdownmenu:hover .dropdown-content {
+.subnav:hover .subnav-content {
   display: block;
 }
 
-#logo{
-    height: 8vh;  
+#logo, #gear{
+    height: 8vh;
 }
+
+/* accessabilty dropdown menu */
+.settingsmenu{
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+}
+
 
 body{
     margin: 0%;
