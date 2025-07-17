@@ -100,11 +100,30 @@ a {
 .settingsmenu:hover .settingsbutton {
 	transform:scale(1.2);
 }
-.settingsmenu a:hover {
+.settingsmenu div:hover {
 	background-color:cyan;
 	color:black;
 }
-
+.settingscontent {
+	display:none;
+	position:absolute;
+	background-color:black;
+	color:white;
+	width:100%;
+	border:0.1rem solid cyan;
+	opacity:88%;
+	z-index:1;
+}
+.settingsmenu div {
+	float:left;
+	color:inherit;
+	padding:0.5rem;
+	display:block;
+	transition:background-color 0.5s ease;
+}
+.settingsmenu:hover .settingscontent {
+	display:block;
+}
 body {
 	margin:0%;
 }
