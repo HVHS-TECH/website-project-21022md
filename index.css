@@ -1,5 +1,5 @@
 /* Code Formatter Used 12:28 15/7/25 */
-/* Base Navbar Configurations */
+/* Navbar Configurations */
 nav {
 	font-family:"Cabin",sans-serif;
 	background-image:radial-gradient(circle,black 75%,cyan);
@@ -13,6 +13,16 @@ nav {
 	font-size:1.5rem;
 	margin:auto;
 	width:100%;
+}
+nav > div > a {
+	float:left;
+	text-align:center;
+	color:white;
+	transition:transform 0.5s ease;
+}
+nav > div > a:hover {
+	color:cyan;
+	transform:scale(1.2);
 }
 a {
 	display:flex;
@@ -33,15 +43,6 @@ a {
 #logo,#gear {
 	height:8vh;
 }
-.navbar a {
-	float:left;
-	text-align:center;
-	text-decoration:none;
-	color:white;
-}
-.navbar a:hover {
-	color:cyan;
-}
 /* Subnav Menu Configurations */
 .subnav .subnav-button {
 	font-size:inherit;
@@ -52,9 +53,10 @@ a {
 	background-color:inherit;
 	transition:transform 0.5s ease;
 	margin:0;
+	text-decoration: underline;
 }
 .subnav:hover .subnav-button {
-	transform:scale(1.1);
+	transform:scale(1.2);
 	color:cyan;
 }
 .subnav a:hover {
@@ -72,7 +74,7 @@ a {
 	opacity:88%;
 	z-index:1;
 }
-.subnav a {
+.subnav a{
 	float:left;
 	color:inherit;
 	padding:0.5rem;
@@ -82,13 +84,17 @@ a {
 .subnav:hover .subnav-content {
 	display:block;
 }
-/* Settings Acessabilty Dropdown Menu Configurations */
-.settingsmenu {
+#home {
+	float:right;
+}
+/* Dropdown Menu Configurations */
+.langmenu {
 	border:none;
 	outline:none;
 	height:8vh;
 }
-.settingsmenu .settingsbutton {
+.langmenu .langbutton {
+	font-size: inherit;
 	border:none;
 	outline:none;
 	color:inherit;
@@ -97,33 +103,33 @@ a {
 	transition:transform 0.5s ease;
 	margin:0;
 }
-.settingsmenu:hover .settingsbutton {
+.langmenu:hover .langbutton {
 	transform:scale(1.2);
 }
-.settingsmenu div:hover {
+.langmenu > div > div:hover {
 	background-color:cyan;
 	color:black;
 }
-.settingscontent {
+.langcontent {
 	display:none;
 	position:absolute;
 	background-color:black;
 	color:white;
-	width:100%;
 	border:0.1rem solid cyan;
+	right:0;
 	opacity:88%;
 	z-index:1;
 }
-.settingsmenu div {
-	float:left;
+.langmenu > div > div {
 	color:inherit;
 	padding:0.5rem;
-	display:block;
+	display:inline-block;
 	transition:background-color 0.5s ease;
 }
-.settingsmenu:hover .settingscontent {
+.langmenu:hover .langcontent {
 	display:block;
 }
+/* General Page Configurations */
 body {
 	margin:0%;
 }
