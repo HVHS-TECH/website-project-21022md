@@ -94,11 +94,9 @@ a {
 	height:8vh;
 }
 .langmenu .langbutton {
-	font-size: inherit;
 	border:none;
 	outline:none;
 	color:inherit;
-	height:8vh;
 	background-color:inherit;
 	transition:transform 0.5s ease;
 	margin:0;
