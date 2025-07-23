@@ -1,4 +1,4 @@
-/* Code Formatter Used 12:28 15/7/25 */
+/* Code Formatter Used 2:43 23/7/25 */
 /* Navbar Configurations */
 nav {
 	font-family:"Cabin",sans-serif;
@@ -53,7 +53,7 @@ a {
 	background-color:inherit;
 	transition:transform 0.5s ease;
 	margin:0;
-	text-decoration: underline;
+	text-decoration:underline;
 }
 .subnav:hover .subnav-button {
 	transform:scale(1.2);
@@ -74,7 +74,7 @@ a {
 	opacity:88%;
 	z-index:1;
 }
-.subnav a{
+.subnav a {
 	float:left;
 	color:inherit;
 	padding:0.5rem;
