@@ -1,4 +1,4 @@
-/* Code Formatter Used 2:43 23/7/25 */
+/* Code Formatter Used 12:20 29/7/25 */
 /* Navbar Configurations */
 nav {
 	background-image:radial-gradient(circle,black 75%,cyan);
@@ -68,10 +68,9 @@ a {
 	color:white;
 	width:100%;
 	height:8vh;
-	border: 0.2vw solid cyan;
+	border:0.2vw solid cyan;
 	opacity:88%;
-	z-index: 2;
-
+	z-index:2;
 }
 .subnav a {
 	float:left;
@@ -83,7 +82,7 @@ a {
 .subnav:hover .subnav-content {
 	display:block;
 }
-#home {
+a.home {
 	float:right;
 }
 /* Dropdown Menu Configurations */
@@ -115,7 +114,7 @@ a {
 	border:0.2vw solid cyan;
 	right:0;
 	opacity:88%;
-	z-index: 2;
+	z-index:2;
 }
 .langmenu > div > div {
 	color:inherit;
@@ -133,77 +132,77 @@ body {
 }
 /* Main Content Configurations */
 main {
-	margin: 0;
-	height: 80vh;
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	background-image: linear-gradient(to right, cyan 60%, black);
+	margin:0;
+	height:80vh;
+	display:grid;
+	grid-template-columns:2fr 1fr 1fr;
+	grid-template-rows:1fr 1fr;
+	background-image:linear-gradient(to right,cyan 60%,black);
 }
 h1 {
 	margin:0;
-	grid-column: 1 / span 1;
-	grid-row: 1 / span 1;
-	margin-left: 2vw;
-	margin-right: 2vw;
-	margin-top: 4vh;
-	padding-top: 2vh;
-	padding-right: 15vw;
-	font-size: 4rem;
-	text-decoration: underline;
+	grid-column:1 / span 1;
+	grid-row:1 / span 1;
+	margin-left:2vw;
+	margin-right:2vw;
+	margin-top:4vh;
+	padding-top:2vh;
+	padding-right:15vw;
+	font-size:4rem;
+	text-decoration:underline;
 }
 p {
 	margin:0;
-	grid-column: 1 / span 1;
-	grid-row: 2 / span 1;
-	margin-left: 2vw;
-	margin-bottom: 4vh;
-	padding-bottom: 1vh;
-	padding-right: 7vw;
-	font-size: 1.2rem;
+	grid-column:1 / span 1;
+	grid-row:2 / span 1;
+	margin-left:2vw;
+	margin-bottom:4vh;
+	padding-bottom:1vh;
+	padding-right:7vw;
+	font-size:1.2rem;
 }
 .grid-photo {
-	height: 32vh;
-	width: 32vh;
-	border-radius: 3rem;
-	margin-bottom: 5vh;
-	margin-right: 1.2rem;
-	z-index: 1;
+	height:32vh;
+	width:32vh;
+	border-radius:3rem;
+	margin-bottom:5vh;
+	margin-right:1.2rem;
+	z-index:1;
 }
 #Wood-Background {
-	height: 80vh;
-	width: 50vw;
-	display: block;
-	grid-column: 2 / span 2;
-	grid-row: 1 / span 2;
-	border-radius: 50vh 0 0 50vh;
-	z-index: 0;
+	height:80vh;
+	width:50vw;
+	display:block;
+	grid-column:2 / span 2;
+	grid-row:1 / span 2;
+	border-radius:50vh 0 0 50vh;
+	z-index:0;
 }
 #Manchu-Archer {
-	grid-column: 2 / span 1;
-	grid-row: 1 / span 1;
-	margin-top: 5vh;
-	margin-left: 65%;
+	grid-column:2 / span 1;
+	grid-row:1 / span 1;
+	margin-top:5vh;
+	margin-left:65%;
 }
 #Fowl-Hunter {
-	grid-column: 3 / span 1;
-	grid-row: 1 / span 1;
-	margin-top: 5vh;
-	margin-left: 30%;
+	grid-column:3 / span 1;
+	grid-row:1 / span 1;
+	margin-top:5vh;
+	margin-left:30%;
 }
 #Martin-Rulsch {
-	grid-column: 2 / span 1;
-	grid-row: 2 / span 1;
-	margin-left: 65%;
-	margin-bottom: 5vh;
+	grid-column:2 / span 1;
+	grid-row:2 / span 1;
+	margin-left:65%;
+	margin-bottom:5vh;
 }
 /* Footer Configurations */
 footer {
-	height: 5vh;
-	background-color: black;
-	color: white;
+	height:5vh;
+	background-color:black;
+	color:white;
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr;
 }
 .footer-item {
 	display:flex;
