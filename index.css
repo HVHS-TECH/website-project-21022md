@@ -157,7 +157,6 @@ p {
 	grid-column: 1 / span 1;
 	grid-row: 2 / span 1;
 	margin-left: 2vw;
-	margin-top: 4vh;
 	margin-bottom: 4vh;
 	padding-bottom: 1vh;
 	padding-right: 7vw;
@@ -183,8 +182,8 @@ p {
 #Manchu-Archer {
 	grid-column: 2 / span 1;
 	grid-row: 1 / span 1;
-	margin-left: 65%;
 	margin-top: 5vh;
+	margin-left: 65%;
 }
 #Fowl-Hunter {
 	grid-column: 3 / span 1;
@@ -195,8 +194,8 @@ p {
 #Martin-Rulsch {
 	grid-column: 2 / span 1;
 	grid-row: 2 / span 1;
-	margin-top: 5vh;
 	margin-left: 65%;
+	margin-bottom: 5vh;
 }
 /* Footer Configurations */
 footer {
