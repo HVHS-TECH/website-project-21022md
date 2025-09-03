@@ -1,4 +1,4 @@
-/**** Code Formatter Used 9:35 8/8/2025 ****/
+/**** Code Formatter Used 12:29 2/9/2025 ****/
 /* Navbar Configurations */
 nav {
 	background-image:radial-gradient(circle,black 75%,cyan);
@@ -128,7 +128,7 @@ main {
 	display:grid;
 	grid-template-columns:2fr repeat(2,1fr);
 	grid-template-rows:repeat(2,1fr);
-	background-color: rgb(15, 15, 15);
+	background-color:rgb(15,15,15);
 }
 #Wood-Background {
 	height:87vh;
@@ -140,15 +140,14 @@ main {
 	border-right:0.2vw solid black;
 	box-sizing:border-box;
 	z-index:0;
-	mask-image: linear-gradient(to right, rgba(0,0,0,.25) 0%, rgba(0,0,0,1) 100%););
+	mask-image:linear-gradient(to right,rgba(0,0,0,.25) 0%,rgba(0,0,0,1) 100%);
 }
 #Target-Background {
 	height:80vh;
-	width:80vh;
+	aspect-ratio:1/1;
 	grid-column:1 / span 1;
 	grid-row:1 / span 2;
 	margin:auto;
-	margin-left: 6.5vw;
 	z-index:0;
 	opacity:22%;
 }
@@ -227,8 +226,8 @@ footer {
 	justify-content:center;
 }
 .footer-item > a {
-	padding-left: 0.25em;
-	padding-right: 0.25em;
+	padding-left:0.25em;
+	padding-right:0.25em;
 	color:white;
 }
 /***** Responsive Actions [Media Queries] *****/
@@ -253,8 +252,78 @@ footer {
 main {
 	grid-template-columns:repeat(2,1fr);
 	grid-template-rows:repeat(4,1fr);
+	height:67.5vh;
 }
-
+#Target-Background {
+	height:30vh;
+	width:30vh;
+	margin:auto;
+	grid-column:1 / span 2;
+	grid-row:1 / span 2;
+}
+#Wood-Background {
+	height:100%;
+	width:100%;
+	grid-column:1 / span 2;
+	grid-row:3 / span 2;
+	border-radius:40vw 40vw 0 0;
+	mask-image:linear-gradient(to bottom,rgba(0,0,0,.25) 0%,rgba(0,0,0,1) 100%);
+}
+h1 {
+	margin:0;
+	grid-column:1 / span 2;
+	grid-row:1 / span 1;
+	padding-top:0;
+	padding-right:0;
+	font-size:2.55rem;
+	margin:auto;
+	margin-top:7vh;
+	text-align:center;
+}
+p {
+	margin:0;
+	grid-column:1 / span 2;
+	grid-row:2 / span 1;
+	margin-left:0;
+	margin-bottom:4vh;
+	padding-bottom:0;
+	padding-left:5vw;
+	padding-right:5vw;
+	font-size:.65rem;
+	text-align:center;
+}
+.grid-photo {
+	height:25vw;
+	aspect-ratio:1/1;
+	border-radius:3rem;
+	z-index:2;
+	border:0.2vw solid black;
+	box-sizing:border-box;
+}
+#Manchu-Archer {
+	grid-column:1 / span 1;
+	grid-row:3 / span 1;
+	margin:auto;
+	margin-right:2.5vw;
+}
+#Fowl-Hunter {
+	grid-column:2 / span 1;
+	grid-row:3 / span 1;
+	margin:auto;
+	margin-left:2.5vw;
+}
+#Martin-Rulsch {
+	grid-column:1 / span 1;
+	grid-row:4 / span 1;
+	margin:auto;
+	margin-right:2.5vw;
+}
+#Professor-Kyudo {
+	grid-column:2 / span 1;
+	grid-row:4 / span 1;
+	margin:auto;
+	margin-left:2.5vw;
+}
 footer {
 	height:12.5vh;
 }
