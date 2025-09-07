@@ -69,7 +69,9 @@ a {
 .subnav a {
 	float:left;
 	color:inherit;
-	padding:0.5rem;
+	padding:.2rem;
+	padding-left:1rem;
+	padding-right:1rem;
 	display:block;
 	transition:background-color 0.5s ease;
 }
@@ -151,27 +153,26 @@ main {
 	z-index:0;
 	opacity:22%;
 }
-h1 {
+main > h1 {
 	margin:0;
 	grid-column:1 / span 1;
 	grid-row:1 / span 1;
+	margin:auto;
+	margin-bottom: 3.3vh;
 	margin-left:5vw;
-	margin-right:2vw;
-	margin-top:4vh;
-	padding-top:2vh;
-	padding-right:12vw;
+	margin-right:15vw;
 	font-size:4rem;
 	text-decoration:underline;
 	z-index:1;
 	color:white;
 }
-p {
+main > p {
 	margin:0;
 	grid-column:1 / span 1;
 	grid-row:2 / span 1;
+	margin:auto;
 	margin-left:5vw;
-	margin-bottom:4vh;
-	padding-bottom:1vh;
+	margin-top:0;
 	padding-right:5vw;
 	font-size:1.2rem;
 	z-index:1;
@@ -184,30 +185,25 @@ p {
 	z-index:2;
 	border:0.2vw solid black;
 	box-sizing:border-box;
+	margin:auto;
 }
 #Manchu-Archer {
 	grid-column:2 / span 1;
 	grid-row:1 / span 1;
-	margin-top:5vh;
-	margin-left:50%;
+	margin-right:0;
 }
 #Fowl-Hunter {
 	grid-column:3 / span 1;
 	grid-row:1 / span 1;
-	margin-top:5vh;
-	margin-left:24%;
 }
 #Martin-Rulsch {
 	grid-column:2 / span 1;
 	grid-row:2 / span 1;
-	margin-left:50%;
-	margin-top:3vh;
+	margin-right:0;
 }
 #Professor-Kyudo {
 	grid-column:3 / span 1;
 	grid-row:2 / span 1;
-	margin-left:24%;
-	margin-top:3vh;
 }
 /* Footer Configurations */
 footer {
@@ -218,36 +214,35 @@ footer {
 	grid-template-columns:repeat(3,1fr);
 	border:0.2vw solid black;
 	box-sizing:border-box;
-	margin:auto
 }
 .footer-item {
 	display:flex;
 	align-content:center;
 	justify-content:center;
+	margin:auto;
 }
-.footer-item > a {
-	padding-left:0.25em;
-	padding-right:0.25em;
-	color:white;
+.footer-item > a{
+	color:cyan;
 }
 /***** Responsive Actions [Media Queries] *****/
 @media screen and (max-width:500px) {
 	nav {
-	grid-template-columns:repeat(12,1fr);
-	grid-template-rows:repeat(2,1fr);
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:repeat(3,1fr);
 	height:20vh;
 }
 .navgrid-item {
-	font-size:2rem;
+	font-size:1.5rem;
 }
-#logo {
-	height:20vh;
-	grid-area:1/1/3/3;
+a.home{
+	display:none;
 }
-#gear {
+#home-logo{
+	grid-column:1 / span 2;
+	grid-row:1 / span 3;
+}
+#logo,#gear {
 	height:20vh;
-	grid-column:1 / span 3;
-	grid-row:1 / span 1;
 }
 main {
 	grid-template-columns:repeat(2,1fr);
@@ -269,7 +264,7 @@ main {
 	border-radius:40vw 40vw 0 0;
 	mask-image:linear-gradient(to bottom,rgba(0,0,0,.25) 0%,rgba(0,0,0,1) 100%);
 }
-h1 {
+main > h1 {
 	margin:0;
 	grid-column:1 / span 2;
 	grid-row:1 / span 1;
@@ -280,7 +275,7 @@ h1 {
 	margin-top:7vh;
 	text-align:center;
 }
-p {
+main > p {
 	margin:0;
 	grid-column:1 / span 2;
 	grid-row:2 / span 1;
@@ -326,5 +321,12 @@ p {
 }
 footer {
 	height:12.5vh;
+}
+.footer-item {
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	padding:auto;
+	color:white;
 }
 }
