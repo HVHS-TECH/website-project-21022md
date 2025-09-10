@@ -1,4 +1,9 @@
 /**** Code Formatter Used 12:29 2/9/2025 ****/
+/* Body Page Configurations */
+body {
+	margin:0%;
+	font-family:"Cabin",sans-serif;
+}
 /* Navbar Configurations */
 nav {
 	background-image:radial-gradient(circle,black 75%,cyan);
@@ -118,12 +123,7 @@ a.home {
 .langmenu:hover .langcontent {
 	display:block;
 }
-/* Body Page Configurations */
-body {
-	margin:0%;
-	font-family:"Cabin",sans-serif;
-}
-/* Main Content Configurations */
+/* Main Page Content Configurations */
 main {
 	margin:0;
 	height:87vh;
@@ -131,6 +131,7 @@ main {
 	grid-template-columns:2fr repeat(2,1fr);
 	grid-template-rows:repeat(2,1fr);
 	background-color:rgb(15,15,15);
+	color:white;
 }
 #Wood-Background {
 	height:87vh;
@@ -164,7 +165,6 @@ main > h1 {
 	font-size:4rem;
 	text-decoration:underline;
 	z-index:1;
-	color:white;
 }
 main > p {
 	margin:0;
@@ -176,7 +176,6 @@ main > p {
 	padding-right:5vw;
 	font-size:1.2rem;
 	z-index:1;
-	color:white;
 }
 .grid-photo {
 	height:35vh;
@@ -220,6 +219,8 @@ footer {
 	align-content:center;
 	justify-content:center;
 	margin:auto;
+	position: fixed;
+	bottom:0;
 }
 .footer-item > a{
 	color:cyan;
@@ -230,9 +231,10 @@ footer {
 	grid-template-columns:repeat(4,1fr);
 	grid-template-rows:repeat(3,1fr);
 	height:20vh;
+	background-image:radial-gradient(circle,black 60%,cyan);
 }
 .navgrid-item {
-	font-size:1.5rem;
+	font-size:1.2rem;
 }
 a.home{
 	display:none;
@@ -241,10 +243,14 @@ a.home{
 	grid-column:1 / span 2;
 	grid-row:1 / span 3;
 }
-#logo,#gear {
+#logo{
 	height:20vh;
 }
+#gear {
+	height:6.5vh;
+}
 main {
+	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	grid-template-rows:repeat(4,1fr);
 	height:67.5vh;
