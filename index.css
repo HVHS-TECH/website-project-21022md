@@ -219,10 +219,8 @@ footer {
 	align-content:center;
 	justify-content:center;
 	margin:auto;
-	position: fixed;
-	bottom:0;
 }
-.footer-item > a{
+.footer-item > a {
 	color:cyan;
 }
 /***** Responsive Actions [Media Queries] *****/

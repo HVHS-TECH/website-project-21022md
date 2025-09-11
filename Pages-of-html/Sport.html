@@ -11,11 +11,13 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
 		rel="stylesheet">
+		<!--Media Query Setup Code-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<!--Navigation Bar-->
 		<nav>
-			<div class="navgrid-item">
+			<div class="navgrid-item" id="home-logo">
 				<a href="/index.html">
 					<img id="logo" src="/Images/Home/ATT-Logo.png" alt="ATT-Logo">
 				</a>
@@ -35,7 +37,7 @@
 						<a href="/Pages-of-html/Design/Design-Modern.html">
 							Modern
 						</a>
-						<a href="index.html" class="home">
+						<a href="/index.html" class="home">
 							Arrow Through Time
 						</a>
 					</div>
@@ -77,7 +79,7 @@
 						<a href="/Pages-of-html/Perception/Perception-Modern.html">
 							Modern
 						</a>
-						<a href="index.html" class="home">
+						<a href="/index.html" class="home">
 							Arrow Through Time
 						</a>
 					</div>
@@ -94,63 +96,110 @@
 				</a>
 			</div>
 			<div class="navgrid-item">
+				<div class="langmenu">
+					<div class="langbutton">
+						<img id="gear" src="/Images/Home/Gear-Icon.png" alt="Settings">
+					</div>
+				</div>
 			</div>
 		</nav>
 		<!--Main Page Content-->
 		<main>
-			<h1 class="heading">
-				The Sport of Archery
-			</h1>
-			<p class="top-para">
-				Archery began as a tool for survival then warfare and sport combined, but this changed 
-				as firearms became the main ranged weapon used in war, causing archery to become fully 
-				an activity only used for fun. This shift finished many centuries ago in the year 1583,
-				where in Finsbury, England, many believed the first large scale archery competition,
-				for fun, happened.
-			</p>
-			<h2 class="sub-heading" id="beginnings">
-				True Sport Beginnings
-			</h2>
-			<p class="sub-para" id="beginnings-para">
-				hello
-			</p>
-			<button class="more-button" id="beginnings-button">
-				More Info
-			</button>
-			<img>
-			<h2 class="sub-heading" id="early-olympic">
-				Olympic Introduction & Troubles
-			</h2>
-			<p class="sub-para" id="early-olympic-para">
-				hi
-			</p>
-			<button class="more-button" id="early-olympic-button">
-				More Info
-			</button>
-			<h2 class="sub-heading" id="standardisation">
-				International Standardisation
-			</h2>
-			<p class="sub-para" id="standardisation-para">
-				hello
-			</p>
-			<button class="more-button" id="standardisation-button">
-				More Info
-			</button>
-			<h2 class="sub-heading" id="modern-day">
-				Modern Day
-			</h2>
-			<p class="sub-para" id="modern-day-para">
-				hello
-			</p>
-			<button class="more-button" id="modern-day-button">
-				More Info
-			</button>
-			<h2 class="sub-heading" id="conclusion">
-				Conclusion
-			</h2>
-			<p class="sub-para" id="conclusion-para">
-				hello
-			</p>
+			<div class="heading">
+				<h1>
+					The Sport of Archery
+				</h1>
+			</div>
+			<div class="top-para">
+				<p>
+					Archery began as a tool for survival then warfare and sport combined, but this changed 
+					as firearms became the main ranged weapon used in war, causing archery to become fully 
+					an activity only used for fun. This shift finished many centuries ago in the year 1583,
+					where in Finsbury, England, many believed the first large scale archery competition,
+					for fun, happened.
+				</p>
+			</div>
+			<div class="sub-heading" id="beginnings">
+				<h2>
+					True Sport Beginnings (16th-19th Century)
+				</h2>
+			</div>
+			<div class="sub-para" id="beginnings-para">
+				<p>
+					With gunpowder based weapons, the bow and arrow became obsolete as a primary weapon of 
+					war and this led to a big change. Archery changed from a military necessity  to a fun
+					activity, with Archery clubs and societies beginning to form in England, which held
+					annual tournaments. The first large scale competition being in 1583 in Finsbury, England.
+					In the 19th century it changed again to become a more formalized sport and the first
+					Grand National Archery Society meeting was held in York in 1844, and the "York Round"
+					(a series of shoots at different distances) became a standardized format.
+				</p>
+			</div>
+			<div class="more-button" id="beginnings-button">
+				<button>
+					More Information
+				</button>
+			</div>
+			<div class="para-image" id="beginnings-img">
+				<img src="/Images/Sport/mrs-louis-c-smith-archery.jpg" alt="mrs-smith-archery" id="mrs-smith-archery">
+			</div>
+			<div class="sub-heading" id="early-olympic">
+				<h2>
+					Olympics Introduction & Troubles
+				</h2>
+			</div>
+			<div class="sub-para" id="early-olympic-para">
+				<p>
+					hi
+				</p>
+			</div>
+			<div class="more-button" id="early-olympic-button">
+				<button>
+					More Information
+				</button>
+			</div>
+			<div class="sub-heading" id="standardisation">
+				<h2>
+					International Standardisation
+				</h2>
+			</div>
+			<div class="sub-para" id="standardisation-para">
+				<p>
+					hello
+				</p>
+			</div>
+			<div class="more-button" id="standardisation-button">
+				<button>
+					More Information
+				</button>
+			</div>
+			<div class="sub-heading" id="modern-day">
+				<h2>
+					Modern Day
+				</h2>
+			</div>
+			<div class="sub-para" id="modern-day-para">
+				<p>
+					hello
+				</p>
+			</div>
+			<div class="more-button" id="modern-day-button">
+				<button>
+					More Information
+				</button>
+			</div>
+			<div class="sub-heading" id="conclusion">
+				<h2>
+					Conclusion
+				</h2>
+			</div>
+			<div class="sub-para" id="conclusion-para">
+				<p>
+					hello
+				</p>
+			</div>
+			<img src="/Images/Sport/Archery-Target.png"
+			alt="Target" id="target-background">
 		</main>
 		<!--Footer-->
 		<footer>
@@ -160,9 +209,11 @@
 			<div class="footer-item">
 			</div>
 			<div class="footer-item">
+				Icon Credit:
 				<a href="https://www.instagram.com/ggrogers56a/">
 					Logo
-				</a>
+				<a>
+				&
 				<a href="https://iconscout.com/free-icon/gear-219_458506">
 					Gear-Icon
 				</a>
