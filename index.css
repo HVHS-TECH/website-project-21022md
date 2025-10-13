@@ -10,7 +10,7 @@ nav {
 	border:0.25vw solid black;
 	box-sizing:border-box;
 	display:grid;
-	grid-template-columns:1fr repeat(5,2fr) 1fr;
+	grid-template-columns:1fr repeat(6,2fr);
 	height:8vh;
 	overflow:hidden;
 	font-size:1.5rem;
@@ -85,43 +85,6 @@ a {
 }
 a.home {
 	float:right;
-}
-/* Dropdown Menu Configurations */
-.langmenu {
-	border:none;
-	outline:none;
-	height:8vh;
-}
-.langmenu .langbutton {
-	border:none;
-	outline:none;
-	color:inherit;
-	background-color:inherit;
-	margin:0;
-}
-.langmenu > div > div:hover {
-	background-color:cyan;
-	color:black;
-}
-.langcontent {
-	display:none;
-	position:absolute;
-	background-color:black;
-	color:white;
-	border:0.2vw solid cyan;
-	box-sizing:border-box;
-	right:0;
-	opacity:88%;
-	z-index:3;
-}
-.langmenu > div > div {
-	color:inherit;
-	padding:0.5rem;
-	display:inline-block;
-	transition:background-color 0.5s ease;
-}
-.langmenu:hover .langcontent {
-	display:block;
 }
 /* Main Page Content Configurations */
 main {
@@ -226,7 +189,7 @@ footer {
 @media screen and (max-width:500px) {
 	nav {
 	grid-template-columns:repeat(4,1fr);
-	grid-template-rows:repeat(3,1fr);
+	grid-template-rows:repeat(3,auto);
 	height:20vh;
 	background-image:radial-gradient(circle,black 60%,cyan);
 }
@@ -249,7 +212,7 @@ a.home{
 main {
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
-	grid-template-rows:repeat(4,1fr);
+	grid-template-rows:repeat(4,auto);
 	height:67.5vh;
 }
 #Target-Background {
@@ -275,9 +238,8 @@ main > h1 {
 	grid-row:1 / span 1;
 	padding-top:0;
 	padding-right:0;
-	font-size:2.55rem;
+	font-size:1.5rem;
 	margin:auto;
-	margin-top:7vh;
 	text-align:center;
 }
 main > p {
@@ -285,15 +247,14 @@ main > p {
 	grid-column:1 / span 2;
 	grid-row:2 / span 1;
 	margin-left:0;
-	margin-bottom:4vh;
 	padding-bottom:0;
 	padding-left:5vw;
 	padding-right:5vw;
-	font-size:.65rem;
+	font-size:.8rem;
 	text-align:center;
 }
 .grid-photo {
-	height:25vw;
+	height:27vw;
 	aspect-ratio:1/1;
 	border-radius:3rem;
 	z-index:2;
@@ -326,6 +287,7 @@ main > p {
 }
 footer {
 	height:12.5vh;
+	background-image:radial-gradient(circle,black);
 }
 .footer-item {
 	display:flex;

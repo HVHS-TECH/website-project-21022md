@@ -28,9 +28,6 @@
 						Design
 					</button>
 					<div class="subnav-content">
-						<a href="/Pages-of-html/Design/Design.html">
-							Overwiew
-						</a>
 						<a href="/Pages-of-html/Design/Design-Historical.html">
 							Historical
 						</a>
@@ -49,9 +46,6 @@
 						Uses
 					</button>
 					<div class="subnav-content">
-						<a href="/Pages-of-html/Uses/Uses.html">
-							Overwiew
-						</a>
 						<a href="/Pages-of-html/Uses/Uses-Historical.html">
 							Historical
 						</a>
@@ -70,9 +64,6 @@
 						Perception
 					</button>
 					<div class="subnav-content">
-						<a href="/Pages-of-html/Perception/Perception.html">
-							Overwiew
-						</a>
 						<a href="/Pages-of-html/Perception/Perception-Historical.html">
 							Historical
 						</a>
@@ -96,11 +87,15 @@
 				</a>
 			</div>
 			<div class="navgrid-item">
-				<div class="langmenu">
-					<div class="langbutton">
-						<img id="gear" src="/Images/Home/Gear-Icon.png" alt="Settings">
-					</div>
-				</div>
+				<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 			</div>
 		</nav>
 		<!--Main Page Content-->
@@ -121,7 +116,7 @@
 			</div>
 			<div class="sub-heading" id="beginnings">
 				<h2>
-					True Sport Beginnings | (16th-19th Century)
+					True Sport Beginnings | (1500s-1800s)
 				</h2>
 			</div>
 			<div class="sub-para" id="beginnings-para">
@@ -136,9 +131,21 @@
 				</p>
 			</div>
 			<div class="more-button" id="beginnings-button">
-				<button>
+				<button id="myBtn">
 					More Information
 				</button>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Archery's transformation from a weapon of war and necessity into a recognized sport began in Europe, primarily in Great Britain, after its military relevance faded with the introduction of gunpowder in the 16th and 17th centuries. Instead of completely abandoning the bow, the upper classes maintained the skill as a social and recreational pastime during the 1700s. Early competitions were more like fashionable festivals than formal sporting events, with archers gathering at grand properties to shoot at specific targets for prizes and social honor. These gatherings led to the formation of the first organized archery clubs and societies, such as the Ancient Scorton Arrow in 1673 and the Royal Company of Archers in 1704. These societies were crucial because they preserved the necessary techniques and equipment, but their rules were local and lacked consistency, meaning a competition in one town might be completely different from one in another.   
+<br>
+<br>
+The true move toward standardized sport began in the 1800s. As the popularity of these social shoots grew, the need for uniform, national rules became clear. This standardization was achieved in 1844 with the first Grand National Archery Meeting in York, England. At this event, organizers formalized the York Round, a set of rules that defined the shooting distances, the size of the target face, and the scoring system. This set of rules became the blueprint for modern competitive archery, transforming it into a proper sport with universal benchmarks. This new structure quickly spread, and by the end of the century, archery had earned enough global status to be included in the first modern Olympic Games in Paris in 1900, cementing its transition from a military art and simple social hobby to an internationally recognized athletic discipline.   
+<br>
+<br>
+In North America, archery's development as a sport was slightly different, often combining the social revival with the rise of ethical bowhunting. While social clubs mimicked the European tradition, the passion for using the bow to hunt, championed by figures like Saxton Pope and Arthur Young, became a powerful driver. This focus promoted the practice of traditional or "primitive" archery for skill and sport outside of formal target ranges, leading to the creation of field archery—shooting at targets placed at varying, often unknown, distances in natural settings. Whether on the aristocratic lawn or in the American woods, the early establishment of standardized rules and dedicated associations during this era was the necessary foundation that would later allow the sport to embrace modern technology and grow into the high-tech, global competition seen today.</p>
+				</div>
 			</div>
 			<div class="para-img" id="beginnings-img">
 				<img src="/Images/Sport/mrs-louis-c-smith-archery.jpg"
@@ -234,7 +241,35 @@
 				</p>
 			</div>
 			<img src="/Images/Sport/Archery-Target.png"
-			alt="Target" id="target-background">
+			alt="Archery-Target" id="background-img">
+			<!-- Modal -->
+			<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 		</main>
 		<!--Footer-->
 		<footer>

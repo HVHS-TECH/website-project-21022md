@@ -18,7 +18,7 @@ nav {
 	border:0.25vw solid black;
 	box-sizing:border-box;
 	display:grid;
-	grid-template-columns:1fr repeat(5,2fr) 1fr;
+	grid-template-columns:1fr repeat(6,2fr);
 	height:8vh;
 	overflow:hidden;
 	font-size:1.5rem;
@@ -99,16 +99,15 @@ a.home {
 }
 /* Main Page Content Configurations */
 main {
-	height:300vh;
 	display:grid;
 	grid-template-columns:repeat(5,1fr);
-	grid-template-rows:repeat(16,1fr);
+	grid-template-rows:repeat(18,auto);
 	background-color:black;
 	color:white;
 }
-#target-background{
+#background-img{
 	grid-column:1 / span 5;
-	grid-row:1 / span 16;
+	grid-row:1 / span 20;
 	z-index:0;
 	width:100%;
 	margin:auto;
@@ -143,44 +142,44 @@ main {
 	font-size:1.2rem;
 	z-index:1;
 	margin:auto;
-	margin-left:10vh;
+	margin-left:20vh;
+	margin-top: 5vh;
 	text-align:left;
 }
 .sub-para {
 	font-size:1rem;
 	z-index:1;
 	margin:auto;
-	margin-left:10vh;
+	margin-left:20vh;
 	text-align:left;
 }
 .more-button {
 	font-size:1rem;
 	z-index:1;
 	margin:auto;
-	margin-left:10vh;
-	margin-top: 0;
+	margin-left:20vh;
 	text-align:center;
 }
 .more-button > button {
-	height:5vh;
+	padding:.3rem;
 	background-color:cyan;
 	border-radius:1vh;
 	border:1vh solid white;
 	box-sizing:border-box;
 	font-weight: bold;
+	border-radius: 1rem;
 } 
 .para-img > img{
 	height:45vh;
 	aspect-ratio: 1/1;
 	border-radius:3rem;
-	border:1vw solid white;
+	border:0.8vw solid white;
 	box-sizing:border-box;
 	z-index:1;
 }
 #beginnings {
 	grid-column:1 / span 3;
 	grid-row:3 / span 1;
-	padding-right:8vw;
 }
 #beginnings-para {
 	grid-column:1 / span 3;
@@ -192,7 +191,7 @@ main {
 }
 #beginnings-img{
 	grid-column:4 / span 2;
-	grid-row:3 / span 3;
+	grid-row:4 / span 2;
 	margin: auto;
 	z-index:1;
 }
@@ -210,7 +209,7 @@ main {
 }
 #early-olympic-img{
 	grid-column:4 / span 2;
-	grid-row:6 / span 3;
+	grid-row:7 / span 2;
 	margin: auto;
 	z-index:1;
 }
@@ -228,7 +227,7 @@ main {
 }
 #standardisation-img{
 	grid-column:4 / span 2;
-	grid-row:9 / span 3;
+	grid-row:10 / span 2;
 	margin: auto;
 	z-index:1;
 }
@@ -246,7 +245,7 @@ main {
 }
 #modern-day-img{
 	grid-column:4 / span 2;
-	grid-row:12 / span 3;
+	grid-row:13 / span 2;
 	margin: auto;
 	z-index:1;
 }
@@ -256,6 +255,7 @@ main {
 	margin:auto;
 	text-align: center;
 	z-index:1;
+	
 }
 #conclusion-para {
 	grid-column:2 / span 3;
@@ -263,6 +263,44 @@ main {
 	text-align: center;
 	margin:auto;
 	z-index:1;
+}
+/* Modal Configurations */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  overflow: 50vh;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  color: black;
+  margin: auto;
+  padding: 1rem;
+  border: 0.25vh solid black;
+  width: 80%;
+  box-sizing:border-box;
+  border-radius:1rem;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* Footer Configurations */
 footer {
@@ -310,15 +348,10 @@ a.home{
 main {
 	display:grid;
 	grid-template-columns:1fr;
-	grid-template-rows:repeat(18,1fr);
-	height:300vh;
+	grid-template-rows:repeat(22,auto);
 }
-#target-background {
-	width:100vw;
-	margin:auto;
-	grid-column:1 / span 1;
-	grid-row:1 / span 2;
-	z-index: 0;
+#background-img{
+	display: none;
 }
 .heading {
 	margin:0;
@@ -354,12 +387,78 @@ main {
 	margin-left:auto;
 	margin-right: auto;
 	margin-top: 0;
+	padding:1rem;
 }
-#beginnings {
-	padding-right:0;
+#beginnings-img{
+	grid-column:1;
+	grid-row:6;
+}
+#early-olympic {
+	grid-row:7;
+}
+#early-olympic-para {
+	grid-row:8;
+}
+#early-olympic-button {
+	grid-row:9;
+}
+#early-olympic-img{
+	grid-column:1;
+	grid-row:10;
+}
+#standardisation {
+	grid-column:1;
+	grid-row:11;
+}
+#standardisation-para {
+	grid-column:1;
+	grid-row:12;
+}
+#standardisation-button {
+	grid-row:13;
+}
+#standardisation-img{
+	grid-column:1;
+	grid-row:14;
+	margin: auto;
+	z-index:1;
+}
+#modern-day {
+	grid-column:1;
+	grid-row:15;
+}
+#modern-day-para {
+	grid-column:1;
+	grid-row:16;
+}
+#modern-day-button {
+	grid-column:1;
+	grid-row:17;
+}
+#modern-day-img{
+	grid-column:1;
+	grid-row:18;
+	margin: auto;
+	z-index:1;
+}
+#conclusion {
+	grid-column:1;
+	grid-row:19;
+	margin:auto;
+	text-align: center;
+	z-index:1;
+	
+}
+#conclusion-para {
+	grid-column:1;
+	grid-row:20;
+	text-align: center;
+	margin:auto;
+	z-index:1;
 }
 footer {
 	height:12.5vh;
+	background-image:radial-gradient(circle,black);
 }
 .footer-item {
 	display:flex;
