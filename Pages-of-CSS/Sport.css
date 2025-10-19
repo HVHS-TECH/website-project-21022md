@@ -255,7 +255,6 @@ main {
 	margin:auto;
 	text-align: center;
 	z-index:1;
-	
 }
 #conclusion-para {
 	grid-column:2 / span 3;
